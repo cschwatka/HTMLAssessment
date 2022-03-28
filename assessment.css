@@ -30,6 +30,20 @@ blockquote {
   color: white;
 }
 
+#teamRoster > li > ul > li > ol > li:first-child {
+  font-weight: bold;
+}
+
+
+tr:nth-child(even) {
+  background: #CCC;
+}
+
+tr:nth-child(odd) {
+  background: #FFF;
+}
+
+
 /*
 
 Make each team's image the background image for the list.
@@ -38,11 +52,11 @@ Hint Check out the element > element and :first-child / :last-child selectors. R
 */
 
 #teamRoster > li:first-child {
-  background-image: url("https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg");
+  background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url("https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg");
 }
 
 #teamRoster > li:last-child {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg");
+  background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url("https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg");
 }
 
 #teamRoster > li:first-child > img {
